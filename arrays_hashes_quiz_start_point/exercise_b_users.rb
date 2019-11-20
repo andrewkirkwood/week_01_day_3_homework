@@ -82,6 +82,16 @@ p users["Erik"][:pets] << new_dog
 
 
 # 10. Add another person to the users hash
-another_person = {"Steven" => {}}
-p users < another_person
-p users
+
+users["Steven"] = {
+  :twitter => "steven999999",
+  :lottery_number => [0,1,5,6,7,8],
+  :home_town => "Neverland",
+  :pets => [
+    {
+      :name => "gregory",
+      :species => "wolf"
+    }
+  ]
+}
+p users["Steven"]
